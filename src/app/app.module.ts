@@ -3,16 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { RoomComponent } from './room/room.component';
+import { DrawComponent } from './draw/draw.component';
+import { CookieService } from 'ngx-cookie-service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    RoomComponent,
+    DrawComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
-  providers: [],
+  providers: [CookieService],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
