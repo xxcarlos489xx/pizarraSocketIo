@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  socketUrl:'http://localhost:3500'
+  socketUrl:'http://run.dmqvirucida.com.pe:3500'
 };
